@@ -3,9 +3,12 @@ package dronesbuap;
 
 
 public class DronesBUAP {
-    public static void main(String[] args) {
-        Panel pp = new Panel();
-        pp.setVisible(true);
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Panel().setVisible(true);
+            }
+        });
     }
     
 }
